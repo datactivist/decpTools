@@ -3,7 +3,7 @@
 #### Import des données JSON (.json)
 
 - initialement `jsonlite::fromJSON()`
-- si ***"Erreur : lexical error: invalid char in json text."*** --> `RJSONIO::fromJSON(x, nullValue = NA)`
+- si ***"Erreur : lexical error: invalid char in json text."*** --> `RJSONIO::fromJSON()`
 
 #### Import des données JSON Lines (.jsonl)
 
