@@ -1,10 +1,14 @@
 ## Outils pour travailler avec les DECP
 
-#### Import des données JSON
+#### Import des données JSON (.json)
 
 - initialement `jsonlite::fromJSON()`
 - si ***"Erreur : lexical error: invalid char in json text."*** --> `RJSONIO::fromJSON(x, nullValue = NA)`
 
+#### Import des données JSON Lines (.jsonl)
+
+- initialement `readLines("file.jsonl") %>% lapply(fromJSON)`
+- .jsonl to .csv : `readLines("file.jsonl") %>% lapply(fromJSON) %>% lapply(unlist) %>% bind_rows()`
 
 #### Comparer des JSON
 
