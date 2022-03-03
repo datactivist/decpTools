@@ -24,6 +24,7 @@
                      .x$author),
                  cols = "nested_col", names_repair = "universal"),   # on unnest une nested colonne
       .default = NA)`, 2: `extract_json_df %>% bind_rows()`
+- 1: `fromJSON(txt)`, 2: `data.frame(Reduce(rbind, extraction))`
 
 #### Comparer des JSON
 
